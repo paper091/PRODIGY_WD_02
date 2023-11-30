@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+  background: #123456;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+    height: 80%;
+    width: 80%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+}
+
+.dial {
+    margin: 2rem;
+  width: 300px;
+  height: 300px;
+  min-width: 250px;
+  min-height: 250px;
+  padding-top: 65px;
+  border-radius: 50%;
+  text-align: center;
+  border: 5px solid #fff;
+  border-style: double;
+}
+
+.circleContent {
+  display: inline-block;
+  color: #fff;
+  font-size: 2.5rem;
+  width: 70px;
+}
+
+.circleContent-span {
+  color: #fff;
+  font-size: 50px;
+}
+
+.labels {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 2.5rem;
+}
+
+.button-area {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.btn-circle{
+  width: 45px;
+  height: 45px;
+  padding: 7px 10px;
+  border-radius: 35px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.laps {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  border-top: 1px solid #333;
+  font-size: 16px;
+  color: #fff;
+}
+
+.lap-row {
+    margin: 2rem;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 300px;
+  width: 300px;
+}

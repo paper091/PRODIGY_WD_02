@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch with Laps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+    <div class="dial">
+        <div>
+          <h1 class="labels">Min</h1>
+          <span class="labels">:</span>
+          <h1 class="labels">Sec</h1>
+          <span class="labels">:</span>
+          <h1 class="labels">Msec</h1>
+        </div>
+        <div>
+          <h1 id="min" class="circleContent">00</h1>
+          <span class="circleContent-span">:</span>
+          <h1 id="sec" class="circleContent">00</h1>
+          <span class="circleContent-span">:</span>
+          <h1 id="msec" class="circleContent">00</h1>
+        </div>
+
+        <div class="button-area">
+          <button
+            id="start"
+            onclick="start()"
+            type="button"
+            class="btn-circle"
+          >
+            play
+          </button>
+          <button
+          id="stop"
+            onclick="stop()"
+            type="button"
+            class="btn-circle"
+          >
+            pause
+          </button>
+          <button
+            id="lapTimer"
+            onclick="lapTimer()"
+            id="lapButton"
+            type="button"
+            class="btn-circle"
+          >
+            lap
+          </button>
+          <button
+            id="reset"
+            onclick="reset()"
+            type="button"
+            class="btn-circle"
+          >
+            reset
+          </button>
+        </div>
+      </div>
+
+      <div class="lap-row" id="laps">
+        <h2>Lap time</h2>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
